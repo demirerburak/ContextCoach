@@ -1,7 +1,9 @@
 {
   "document_id": "note-001",
-  "collection": "notlarim",
+  "collection_id": "notlarim",
   "document_type": "personal_note",
   "title": "Öğrenme hedefim",
-  "text": "Okuduğum kaynakları bir arada tutmak ve karşılaştırmak istiyorum."
+  "text": "Okuduğum kaynakları bir arada tutmak ve karşılaştırmak istiyorum.",
+  "source_url": "https://example.com/learning-goal",
+  "source_date": "2026-09-14"
 }

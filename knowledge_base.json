@@ -1,0 +1,64 @@
+{
+    "collections": [
+        {
+            "collection_id": "signal",
+            "name": "Signal Notlarım",
+            "description": "Sinyaller, temel özellikleri ve kullanım alanları hakkındaki notlarım."
+        },
+        {
+            "collection_id": "python",
+            "name": "Python Öğrenme Notlarım",
+            "description": "Python öğrenirken oluşturduğum kısa açıklamalar ve hatırlatmalar."
+        }
+    ],
+    "documents": [
+        {
+            "document_id": "signal-001",
+            "collection_id": "signal",
+            "document_type": "personal_note",
+            "title": "Sinyal kavramı ve kullanım alanları",
+            "text": "Sinyal, bir sistem hakkında bilgi taşıyan ve zamana ya da başka bir bağımsız değişkene göre değişen büyüklüktür. Ses, görüntü, sıcaklık ölçümü ve ağ haberleşmesi sinyallerle temsil edilebilir. Sinyallerin incelenmesi, taşınan bilginin yorumlanmasını ve işlenmesini sağlar.",
+            "source_date": "2026-05-16"
+        },
+        {
+            "document_id": "signal-002",
+            "collection_id": "signal",
+            "document_type": "personal_note",
+            "title": "Analog ve dijital sinyaller",
+            "text": "Analog sinyaller belirli bir aralıkta sürekli değerler alabilir. Dijital sinyaller ise bilgiyi ayrık değerlerle, çoğunlukla sıfır ve birlerle temsil eder. Gerçek dünyadaki analog bir sinyal, bilgisayarda işlenebilmesi için örneklenip sayısallaştırılabilir.",
+            "source_date": "2026-05-17"
+        },
+        {
+            "document_id": "signal-003",
+            "collection_id": "signal",
+            "document_type": "personal_note",
+            "title": "Zaman ve frekans alanı",
+            "text": "Zaman alanı bir sinyalin zaman içinde nasıl değiştiğini gösterir. Frekans alanı ise sinyalin hangi frekans bileşenlerinden oluştuğunu incelemeyi kolaylaştırır. Aynı sinyale bu iki farklı açıdan bakmak, farklı özelliklerin daha görünür olmasını sağlar.",
+            "source_date": "2026-05-18"
+        },
+        {
+            "document_id": "python-001",
+            "collection_id": "python",
+            "document_type": "personal_note",
+            "title": "Python listeleri",
+            "text": "Liste, birden fazla değeri sıralı biçimde tutan değiştirilebilir bir Python veri yapısıdır. Elemanlara sıfırdan başlayan indekslerle erişilir. append metodu listenin sonuna yeni bir eleman ekler.",
+            "source_date": "2026-09-14"
+        },
+        {
+            "document_id": "python-002",
+            "collection_id": "python",
+            "document_type": "personal_note",
+            "title": "Fonksiyonların görevi",
+            "text": "Fonksiyonlar belirli bir işi yapan kodu isimlendirip tekrar kullanılabilir hale getirir. Parametreler fonksiyona veri aktarırken return ifadesi çağıran koda sonuç gönderir. Küçük ve tek amaçlı fonksiyonlar kodun test edilmesini ve anlaşılmasını kolaylaştırır.",
+            "source_date": "2026-09-14"
+        },
+        {
+            "document_id": "python-003",
+            "collection_id": "python",
+            "document_type": "personal_note",
+            "title": "Sanal ortam kullanımı",
+            "text": "Sanal ortam, bir Python projesinin paketlerini diğer projelerden ayırır. Böylece iki proje aynı kütüphanenin farklı sürümlerini kullanabilir. Ortam etkinleştirildiğinde pip ile kurulan paketler proje ortamına yüklenir.",
+            "source_date": "2026-09-14"
+        }
+    ]
+}

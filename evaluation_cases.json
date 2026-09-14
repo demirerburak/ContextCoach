@@ -1,0 +1,44 @@
+{
+    "cases": [
+        {
+            "case_id": "eval-001",
+            "task_type": "question_answering",
+            "question": "Sinyal nedir ve hangi kullanım örnekleri verilebilir?",
+            "target_collection_ids": ["signal"],
+            "expected_terms": ["bilgi", "ses", "görüntü"],
+            "should_abstain": false
+        },
+        {
+            "case_id": "eval-002",
+            "task_type": "summary",
+            "question": "Python koleksiyonundaki notları kısa şekilde özetle.",
+            "target_collection_ids": ["python"],
+            "expected_terms": ["liste", "fonksiyon", "sanal ortam"],
+            "should_abstain": false
+        },
+        {
+            "case_id": "eval-003",
+            "task_type": "comparison",
+            "question": "Analog ve dijital sinyalleri karşılaştır.",
+            "target_collection_ids": ["signal"],
+            "expected_terms": ["sürekli", "ayrık", "sayısallaştırılabilir"],
+            "should_abstain": false
+        },
+        {
+            "case_id": "eval-004",
+            "task_type": "recommendation",
+            "question": "İki Python projesinin farklı paket sürümlerine ihtiyacı varsa ne kullanmalıyım ve neden?",
+            "target_collection_ids": ["python"],
+            "expected_terms": ["sanal ortam", "paket", "farklı sürüm"],
+            "should_abstain": false
+        },
+        {
+            "case_id": "eval-005",
+            "task_type": "abstention",
+            "question": "Python decorator'ları nasıl çalışır?",
+            "target_collection_ids": ["python"],
+            "expected_terms": [],
+            "should_abstain": true
+        }
+    ]
+}

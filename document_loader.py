@@ -1,21 +1,27 @@
 import json
 
+from models import Document, KnowledgeBase
 
-def load_document(path: str) -> dict:
-    # 1. Dosyayı UTF-8 olarak aç.
+
+def load_document(path: str) -> Document:
     with open(path, "r", encoding="utf-8") as file:
-    # 2. json.load(...) ile Python sözlüğüne dönüştür.
-        document = json.load(file)
-    if not isinstance(document, dict):
-        raise ValueError("Document JSON must be an object.")
-    # 3. "text" alanını kontrol et.
-    document_text = document.get("text")
-    # 4. Alan yoksa, metin değilse veya boşsa ValueError oluştur.
-    if not isinstance(document_text, str) or not document_text.strip():
-        raise ValueError("Document must contain a non-empty 'text' field.")
-    return document
+        data = json.load(file)
+    return Document.model_validate(data)
+
+
+def load_knowledge_base(path: str) -> KnowledgeBase:
+    with open(path, "r", encoding="utf-8") as file:
+        data = json.load(file)
+    return KnowledgeBase.model_validate(data)
 
 
 if __name__ == "__main__":
     document = load_document("document.json")
-    print(document)
+    print(document.model_dump(mode="json"))
+    knowledge_base = load_knowledge_base("knowledge_base.json")
+    print(
+    knowledge_base.model_dump_json(
+        indent=2,
+        exclude_none=True,
+    )
+)
